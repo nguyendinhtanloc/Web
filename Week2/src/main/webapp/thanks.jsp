@@ -17,6 +17,7 @@
             if (user != null) {
         %>
             <div class="user-details">
+                <h2>Personal Information</h2>
                 <label>Email:</label>
                 <span><%= user.getEmail() %></span><br>
                 <label>First Name:</label>
@@ -25,6 +26,19 @@
                 <span><%= user.getLastName() %></span><br>
                 <label>Date of Birth:</label>
                 <span><%= user.getDob() %></span><br>
+
+                <h2>Survey Information</h2>
+                <label>Heard About Us:</label>
+                <span><%= user.getHear() %></span><br>
+
+                <label>Wants Offers:</label>
+                <span><%= user.isOffers() ? "Yes" : "No" %></span><br>
+
+                <label>Email Announcements:</label>
+                <span><%= user.isEmailOK() ? "Yes" : "No" %></span><br>
+
+                <label>Contact Preference:</label>
+                <span><%= user.getContact() %></span><br>
             </div>
         <%
             } else {
