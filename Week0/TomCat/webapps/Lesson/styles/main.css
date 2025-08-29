@@ -1,0 +1,125 @@
+:root {
+    --dark-purple: #5D2A42;
+    --coral-pink: #FB6376;
+    --light-pink: #FCB1A6;
+    --beige: #FFDCCC;
+    --cream-bg: #FFF9EC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cream-bg); /* Màu nền chính */
+    color: var(--dark-purple); /* Màu chữ chính */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(93, 42, 66, 0.15); /* Shadow với màu tím đậm */
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--beige);
+}
+
+.card-header {
+    background-color: var(--dark-purple); /* Màu header */
+    color: white;
+    padding: 20px 30px;
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--beige); /* Màu viền */
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.profile-pic {
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.profile-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.profile-info strong {
+    color: var(--dark-purple);
+    min-width: 120px;
+    display: inline-block;
+}
+
+.assignments-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--coral-pink); /* Màu tiêu đề phụ */
+}
+
+.assignment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.assignment-table th, .assignment-table td {
+    border: 1px solid var(--beige); /* Màu viền bảng */
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.assignment-table th {
+    background-color: var(--cream-bg); /* Màu nền header bảng */
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-github {
+    background-color: var(--dark-purple); /* Nút màu tím đậm */
+}
+
+.btn-deploy {
+    background-color: var(--coral-pink); /* Nút màu hồng san hô */
+}

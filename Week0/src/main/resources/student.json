@@ -1,0 +1,31 @@
+{
+  "maSoSinhVien": "23133041",
+  "hoVaTen": "Nguyễn Đình Tấn Lộc",
+  "ngaySinh": "05/06/2005",
+  "gioiTinh": "Nam",
+  "lop": "23133A",
+  "monHoc": "Lập trình Web",
+  "maHocPhan": "WEPR330479",
+  "assignments": [
+    {
+      "Tổng": "Tổng",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop",
+      "renderLink": ""
+    },
+    {
+      "tuan": "Tuần 0",
+      "githubLink": "",
+      "renderLink": ""
+    },
+    {
+      "tuan": "Tuần 1",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week1",
+      "renderLink": ""
+    },
+    {
+      "tuan": "Tuần 2",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week2",
+      "renderLink": "https://lesson-b5ye.onrender.com/"
+    }
+  ]
+}

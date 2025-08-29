@@ -1,0 +1,21 @@
+{
+  "maSoSinhVien": "23133041",
+  "hoVaTen": "Nguyễn Đình Tấn Lộc",
+  "ngaySinh": "05/06/2005",
+  "gioiTinh": "Nam",
+  "lop": "23133A",
+  "monHoc": "Lập trình Web",
+  "maHocPhan": "WEPR330479",
+  "assignments": [
+    {
+      "tuan": "Tuần 1",
+      "githubLink": "https://github.com/your-username/repo/tree/tuan1",
+      "renderLink": "https://your-project-tuan1.onrender.com"
+    },
+    {
+      "tuan": "Tuần 2",
+      "githubLink": "https://github.com/your-username/repo/tree/tuan2",
+      "renderLink": "https://your-project-tuan2.onrender.com"
+    }
+  ]
+}

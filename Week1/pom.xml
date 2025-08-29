@@ -23,6 +23,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Week1</finalName>
+    <finalName>Lesson</finalName>
   </build>
 </project>

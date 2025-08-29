@@ -1,0 +1,328 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 00:58:03.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.6.1
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.15+0
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 00:58:03.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 00:58:03.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/conf/logging.properties
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 00:58:03.998 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/temp
+30-Aug-2025 00:58:04.003 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nguyendinhtanloc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2025 00:58:04.131 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 00:58:04.142 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [245] milliseconds
+30-Aug-2025 00:58:04.156 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2025 00:58:04.156 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-Aug-2025 00:58:04.161 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Week0.war]
+30-Aug-2025 00:58:04.326 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 00:58:04.342 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Week0.war] has finished in [180] ms
+30-Aug-2025 00:58:04.342 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs]
+30-Aug-2025 00:58:04.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs] has finished in [9] ms
+30-Aug-2025 00:58:04.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager]
+30-Aug-2025 00:58:04.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager] has finished in [13] ms
+30-Aug-2025 00:58:04.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples]
+30-Aug-2025 00:58:04.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples] has finished in [80] ms
+30-Aug-2025 00:58:04.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT]
+30-Aug-2025 00:58:04.450 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT] has finished in [6] ms
+30-Aug-2025 00:58:04.450 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager]
+30-Aug-2025 00:58:04.457 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager] has finished in [7] ms
+30-Aug-2025 00:58:04.458 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 00:58:04.462 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [319] milliseconds
+30-Aug-2025 01:00:04.554 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Week0]
+30-Aug-2025 01:00:04.576 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/lesson.war]
+30-Aug-2025 01:00:04.648 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:00:04.651 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/lesson.war] has finished in [75] ms
+30-Aug-2025 01:00:07.695 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Aug-2025 01:00:07.695 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:07.697 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Aug-2025 01:00:07.705 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:07.708 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:00:11.055 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-Aug-2025 01:00:11.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-Aug-2025 01:00:11.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-Aug-2025 01:00:11.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Aug-2025 01:00:11.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.6.1
+30-Aug-2025 01:00:11.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+30-Aug-2025 01:00:11.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home
+30-Aug-2025 01:00:11.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.15+0
+30-Aug-2025 01:00:11.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+30-Aug-2025 01:00:11.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:11.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:11.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/conf/logging.properties
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:11.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:11.064 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/temp
+30-Aug-2025 01:00:11.069 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nguyendinhtanloc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2025 01:00:11.198 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:11.209 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [256] milliseconds
+30-Aug-2025 01:00:11.225 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2025 01:00:11.225 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-Aug-2025 01:00:11.229 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/lesson.war]
+30-Aug-2025 01:00:11.392 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:00:11.408 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/lesson.war] has finished in [179] ms
+30-Aug-2025 01:00:11.408 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs]
+30-Aug-2025 01:00:11.417 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs] has finished in [9] ms
+30-Aug-2025 01:00:11.417 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager]
+30-Aug-2025 01:00:11.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager] has finished in [13] ms
+30-Aug-2025 01:00:11.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples]
+30-Aug-2025 01:00:11.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples] has finished in [89] ms
+30-Aug-2025 01:00:11.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT]
+30-Aug-2025 01:00:11.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT] has finished in [7] ms
+30-Aug-2025 01:00:11.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager]
+30-Aug-2025 01:00:11.535 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager] has finished in [9] ms
+30-Aug-2025 01:00:11.537 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:11.541 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [331] milliseconds
+30-Aug-2025 01:00:40.332 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Aug-2025 01:00:40.332 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:40.334 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Aug-2025 01:00:40.342 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:40.345 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:00:42.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.6.1
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.15+0
+30-Aug-2025 01:00:42.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+30-Aug-2025 01:00:42.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:42.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/conf/logging.properties
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Aug-2025 01:00:42.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Aug-2025 01:00:42.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:42.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:00:42.773 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/temp
+30-Aug-2025 01:00:42.777 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nguyendinhtanloc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2025 01:00:42.901 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:42.914 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [228] milliseconds
+30-Aug-2025 01:00:42.927 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2025 01:00:42.927 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-Aug-2025 01:00:42.931 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/lesson.war]
+30-Aug-2025 01:00:43.077 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:00:43.092 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/lesson.war] has finished in [161] ms
+30-Aug-2025 01:00:43.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs]
+30-Aug-2025 01:00:43.101 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs] has finished in [9] ms
+30-Aug-2025 01:00:43.101 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager]
+30-Aug-2025 01:00:43.113 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager] has finished in [12] ms
+30-Aug-2025 01:00:43.113 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples]
+30-Aug-2025 01:00:43.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples] has finished in [77] ms
+30-Aug-2025 01:00:43.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT]
+30-Aug-2025 01:00:43.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT] has finished in [6] ms
+30-Aug-2025 01:00:43.197 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager]
+30-Aug-2025 01:00:43.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager] has finished in [6] ms
+30-Aug-2025 01:00:43.205 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:00:43.209 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [295] milliseconds
+30-Aug-2025 01:01:23.228 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/lesson]
+30-Aug-2025 01:01:31.024 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Aug-2025 01:01:31.025 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:01:31.026 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Aug-2025 01:01:31.033 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:01:31.036 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:02:06.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.6.1
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.15+0
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:02:06.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/conf/logging.properties
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Aug-2025 01:02:06.989 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-Aug-2025 01:02:06.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Aug-2025 01:02:06.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Aug-2025 01:02:06.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:02:06.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:02:06.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/temp
+30-Aug-2025 01:02:06.994 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nguyendinhtanloc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2025 01:02:07.123 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:02:07.135 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [231] milliseconds
+30-Aug-2025 01:02:07.148 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2025 01:02:07.148 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-Aug-2025 01:02:07.153 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war]
+30-Aug-2025 01:02:07.307 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:02:07.325 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war] has finished in [172] ms
+30-Aug-2025 01:02:07.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs]
+30-Aug-2025 01:02:07.335 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs] has finished in [10] ms
+30-Aug-2025 01:02:07.335 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager]
+30-Aug-2025 01:02:07.348 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager] has finished in [13] ms
+30-Aug-2025 01:02:07.348 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples]
+30-Aug-2025 01:02:07.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples] has finished in [85] ms
+30-Aug-2025 01:02:07.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT]
+30-Aug-2025 01:02:07.439 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT] has finished in [6] ms
+30-Aug-2025 01:02:07.439 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager]
+30-Aug-2025 01:02:07.445 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager] has finished in [6] ms
+30-Aug-2025 01:02:07.447 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:02:07.450 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [315] milliseconds
+30-Aug-2025 01:09:47.808 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Lesson]
+30-Aug-2025 01:09:57.848 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war]
+30-Aug-2025 01:09:57.923 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:09:57.926 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war] has finished in [78] ms
+30-Aug-2025 01:10:07.073 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Aug-2025 01:10:07.073 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:10:07.074 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Aug-2025 01:10:07.082 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:10:07.085 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:10:12.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-Aug-2025 01:10:12.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-Aug-2025 01:10:12.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-Aug-2025 01:10:12.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Aug-2025 01:10:12.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.6.1
+30-Aug-2025 01:10:12.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+30-Aug-2025 01:10:12.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home
+30-Aug-2025 01:10:12.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.15+0
+30-Aug-2025 01:10:12.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+30-Aug-2025 01:10:12.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:10:12.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:10:12.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Aug-2025 01:10:12.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/conf/logging.properties
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:10:12.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/temp
+30-Aug-2025 01:10:12.140 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nguyendinhtanloc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2025 01:10:12.273 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:10:12.285 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [246] milliseconds
+30-Aug-2025 01:10:12.301 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2025 01:10:12.302 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-Aug-2025 01:10:12.307 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war]
+30-Aug-2025 01:10:12.470 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:10:12.488 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war] has finished in [181] ms
+30-Aug-2025 01:10:12.488 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs]
+30-Aug-2025 01:10:12.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs] has finished in [10] ms
+30-Aug-2025 01:10:12.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager]
+30-Aug-2025 01:10:12.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager] has finished in [16] ms
+30-Aug-2025 01:10:12.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples]
+30-Aug-2025 01:10:12.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples] has finished in [85] ms
+30-Aug-2025 01:10:12.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT]
+30-Aug-2025 01:10:12.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT] has finished in [5] ms
+30-Aug-2025 01:10:12.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager]
+30-Aug-2025 01:10:12.612 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager] has finished in [6] ms
+30-Aug-2025 01:10:12.613 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:10:12.620 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [334] milliseconds
+30-Aug-2025 01:14:01.495 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Aug-2025 01:14:01.498 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:14:01.500 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Aug-2025 01:14:01.521 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:14:01.525 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:14:39.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.108
+30-Aug-2025 01:14:39.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 31 2025 18:19:48 UTC
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.108.0
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            15.6.1
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/homebrew/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.15+0
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Homebrew
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:14:39.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/conf/logging.properties
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Aug-2025 01:14:39.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:14:39.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat
+30-Aug-2025 01:14:39.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/temp
+30-Aug-2025 01:14:39.977 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/nguyendinhtanloc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+30-Aug-2025 01:14:40.115 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:14:40.128 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [253] milliseconds
+30-Aug-2025 01:14:40.144 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Aug-2025 01:14:40.144 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.108]
+30-Aug-2025 01:14:40.149 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war]
+30-Aug-2025 01:14:40.337 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Aug-2025 01:14:40.358 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/Lesson.war] has finished in [209] ms
+30-Aug-2025 01:14:40.359 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs]
+30-Aug-2025 01:14:40.372 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/docs] has finished in [13] ms
+30-Aug-2025 01:14:40.372 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager]
+30-Aug-2025 01:14:40.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/manager] has finished in [16] ms
+30-Aug-2025 01:14:40.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples]
+30-Aug-2025 01:14:40.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/examples] has finished in [89] ms
+30-Aug-2025 01:14:40.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT]
+30-Aug-2025 01:14:40.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/ROOT] has finished in [9] ms
+30-Aug-2025 01:14:40.487 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager]
+30-Aug-2025 01:14:40.493 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/nguyendinhtanloc/Documents/Semester_1_2025/Web/Week0/TomCat/webapps/host-manager] has finished in [6] ms
+30-Aug-2025 01:14:40.495 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Aug-2025 01:14:40.499 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [371] milliseconds
