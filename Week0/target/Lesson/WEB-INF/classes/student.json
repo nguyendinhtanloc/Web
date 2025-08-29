@@ -8,14 +8,29 @@
   "maHocPhan": "WEPR330479",
   "assignments": [
     {
+      "Tổng": "Tổng",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop",
+      "renderLink": ""
+    },
+    {
+      "tuan": "Tuần 0",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week0",
+      "renderLink": "https://lesson0.onrender.com"
+    },
+    {
       "tuan": "Tuần 1",
-      "githubLink": "https://github.com/your-username/repo/tree/tuan1",
-      "renderLink": "https://your-project-tuan1.onrender.com"
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week1",
+      "renderLink": "https://web-srqn.onrender.com"
     },
     {
       "tuan": "Tuần 2",
-      "githubLink": "https://github.com/your-username/repo/tree/tuan2",
-      "renderLink": "https://your-project-tuan2.onrender.com"
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week2",
+      "renderLink": "https://lesson-b5ye.onrender.com/"
+    },
+    {
+      "tuan": "Tuần 3",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week2",
+      "renderLink": "https://lesson-b5ye.onrender.com/"
     }
   ]
 }

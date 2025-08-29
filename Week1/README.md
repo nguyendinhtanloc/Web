@@ -1,97 +1,107 @@
 # Ứng dụng quản lý danh sách email - Email List Application
 
-Dự án Java Web đơn giản giúp người dùng nhập thông tin và đăng ký vào một danh sách email.  
-Ứng dụng minh họa luồng xử lý cơ bản của một ứng dụng web: từ trang nhập liệu (form), xử lý dữ liệu ở backend (Servlet), đến trang xác nhận cuối cùng.
+Một dự án Java Web cơ bản giúp người dùng nhập thông tin (họ tên, email) và đăng ký vào danh sách nhận tin. Ứng dụng này minh họa luồng xử lý cốt lõi của một ứng dụng web: từ trang nhập liệu (form), xử lý logic ở backend (Servlet), và cuối cùng là chuyển hướng đến trang xác nhận.
 
 ---
 
 ## Công nghệ & Môi trường
 
-Dự án được xây dựng với các công nghệ và công cụ sau:
+Dự án được xây dựng và vận hành với các công nghệ và công cụ sau:
 
-- **Java Development Kit (JDK)**: Phiên bản 11 hoặc cao hơn  
-- **Apache Maven**: Quản lý dependencies và build project  
-- **Apache Tomcat**: Máy chủ web để triển khai ứng dụng  
-- **IDE gợi ý**: IntelliJ IDEA, Eclipse hoặc VS Code với plugin Java  
-- **Trình duyệt**: Chrome, Firefox hoặc Edge  
+-   **Ngôn ngữ**: Java 11+
+-   **Build tool**: Apache Maven
+-   **Máy chủ**: Apache Tomcat 9+
+-   **IDE gợi ý**: IntelliJ IDEA, Eclipse, hoặc VS Code (với Extension Pack for Java)
+
+### Thư viện sử dụng
+
+-   **Java Servlet API**: Để xử lý các yêu cầu HTTP từ người dùng.
+-   **JavaServer Pages (JSP) API**: Để tạo giao diện người dùng động.
 
 ---
 
 ## Cấu trúc dự án
 
-Dự án tuân theo chuẩn Maven Web:
-
-
+Dự án tuân theo cấu trúc chuẩn của một Maven Web Application:
 Week1/
-├─ pom.xml
-└─ src/
-└─ main/
-├─ java/
-│ └─ murach/email/
-│ ├─ User.java
-│ └─ EmailListServlet.java
-├─ resources/
-└─ webapp/
-├─ WEB-INF/
-│ └─ web.xml
-├─ styles/
-│ └─ main.css
-├─ index.jsp
-└─ thanks.jsp
+├── pom.xml
+└── src/
+└── main/
+├── java/
+│   └── murach/
+│       └── email/
+│           ├── User.java
+│           └── EmailListServlet.java
+├── resources/
+└── webapp/
+├── WEB-INF/
+│   └── web.xml
+├── styles/
+│   └── main.css
+├── index.jsp
+└── thanks.jsp
 
+**Giải thích các thành phần chính:**
 
-**Giải thích:**
-
-| File | Chức năng |
-|------|-----------|
-| `User.java` | Model lưu thông tin người dùng (name, email) |
-| `EmailListServlet.java` | Xử lý form gửi email và redirect sang `thanks.jsp` |
-| `web.xml` | Cấu hình servlet và URL mapping |
-| `index.jsp` | Form nhập thông tin người dùng |
-| `thanks.jsp` | Trang hiển thị lời cảm ơn |
-| `styles/main.css` | CSS định dạng giao diện |
-
----
-
-## Flow ứng dụng
-
-1. Người dùng truy cập **index.jsp** và điền tên cùng email vào form.  
-2. Nhấn **Sign Up** → dữ liệu được gửi tới `EmailListServlet`.  
-3. `EmailListServlet` xử lý dữ liệu (tạo đối tượng `User`, lưu thông tin, …), sau đó redirect tới **thanks.jsp**.  
-4. **thanks.jsp** hiển thị thông báo cảm ơn và xác nhận đăng ký thành công.
----
-
-## Hướng dẫn chạy
-
-1. **Clone project về máy:**
-
-```bash
-git clone <repo-url>
-cd Week1
-```
-
-2. **Build project bằng Maven:**
-```
-mvn clean package
-```
-
-3. **Triển khai trên Tomcat:**
-- Sao chép file Week1.war vào thư mục webapps của Tomcat.
-- Khởi động Tomcat, Tomcat sẽ tự động giải nén và triển khai ứng dụng.
-- Truy cập trình duyệt: `http://localhost:8080/Week1`
+| File / Thư mục      | Chức năng                                                               |
+| ------------------- | ----------------------------------------------------------------------- |
+| `User.java`         | **Model**: Đại diện cho thông tin người dùng (firstName, lastName, email). |
+| `EmailListServlet.java` | **Controller**: Nhận và xử lý dữ liệu từ form, sau đó chuyển hướng. |
+| `web.xml`           | Cấu hình deployment, ánh xạ URL `/emailList` tới `EmailListServlet`.  |
+| `index.jsp`         | **View**: Chứa form HTML để người dùng nhập thông tin.                  |
+| `thanks.jsp`        | **View**: Trang cảm ơn, hiển thị sau khi người dùng đăng ký thành công. |
+| `styles/main.css`   | Định dạng giao diện (CSS) cho các trang JSP.                             |
+| `pom.xml`           | Quản lý các thư viện (dependencies) và cấu hình build của dự án.        |
 
 ---
 
-### Lưu ý quan trọng
+##  Luồng hoạt động của ứng dụng
 
-- Các file Java phải nằm trong đúng package: src/main/java/murach/email/.
-- File JSP và CSS phải nằm trong src/main/webapp/.
-- File web.xml phải ở WEB-INF/ để Tomcat nhận diện và ánh xạ Servlet.
+Ứng dụng hoạt động theo một luồng request-response đơn giản:
+
+1.  **Nhập liệu**: Người dùng truy cập vào trang `index.jsp` và điền thông tin vào form đăng ký.
+2.  **Gửi yêu cầu**: Khi nhấn nút "Sign Up", form sẽ gửi một HTTP POST request đến `EmailListServlet`.
+3.  **Xử lý**: `EmailListServlet` nhận dữ liệu, tạo một đối tượng `User`, và thực hiện các logic cần thiết (ví dụ: lưu vào cơ sở dữ liệu, ở đây chỉ đơn giản là chuyển tiếp).
+4.  **Chuyển hướng**: Servlet sau đó gửi một lệnh chuyển hướng (redirect) đến trình duyệt, yêu cầu truy cập trang `thanks.jsp`.
+5.  **Hiển thị kết quả**: Trình duyệt nhận lệnh và tải trang `thanks.jsp`, hiển thị thông báo đăng ký thành công cho người dùng.
+
 
 ---
 
-### Tác giả
+##  Hướng dẫn chạy
 
-Họ và tên: Nguyễn Đình Tân Lộc
+Để triển khai và chạy ứng dụng trên máy của bạn, hãy làm theo các bước sau:
 
-Email: 23133041@student.hcmute.edu.vn
+1.  **Clone dự án về máy:**
+
+    ```bash
+    git clone <your-repository-url>
+    cd Week1
+    ```
+
+2.  **Build dự án bằng Maven:**
+    Mở Terminal hoặc Command Prompt tại thư mục gốc của dự án và chạy lệnh:
+    ```bash
+    mvn clean package
+    ```
+    Lệnh này sẽ tạo ra một file `Week1.war` trong thư mục `target`.
+
+3.  **Triển khai trên Tomcat:**
+    -   Sao chép file `Week1.war` vừa tạo vào thư mục `webapps` của Tomcat.
+    -   Khởi động Tomcat. Máy chủ sẽ tự động giải nén và triển khai ứng dụng.
+    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Week1/`
+
+---
+
+## Lưu ý quan trọng
+
+-   Đảm bảo các file Java nằm trong đúng package: `src/main/java/murach/email/`.
+-   Các tài nguyên web (JSP, CSS, images) phải nằm trong `src/main/webapp/`.
+-   File `web.xml` là bắt buộc trong dự án này để Tomcat có thể nhận diện và ánh xạ URL tới Servlet.
+
+---
+
+## Tác giả
+
+-   **Họ và tên**: Nguyễn Đình Tân Lộc
+-   **Email**: `23133041@student.hcmute.edu.vn`
