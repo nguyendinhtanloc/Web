@@ -84,12 +84,12 @@ Week1/
     ```bash
     mvn clean package
     ```
-    Lệnh này sẽ tạo ra một file `Week1.war` trong thư mục `target`.
+    Lệnh này sẽ tạo ra một file `Lesson.war` trong thư mục `target`.
 
 3.  **Triển khai trên Tomcat:**
-    -   Sao chép file `Week1.war` vừa tạo vào thư mục `webapps` của Tomcat.
+    -   Sao chép file `Lesson.war` vừa tạo vào thư mục `webapps` của Tomcat.
     -   Khởi động Tomcat. Máy chủ sẽ tự động giải nén và triển khai ứng dụng.
-    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Week1/`
+    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Lesson/`
 
 ---
 

@@ -62,7 +62,7 @@ Week0/
 
 ## Luồng hoạt động của ứng dụng
 
-1.  Người dùng truy cập vào URL gốc của ứng dụng (ví dụ: `http://localhost:8080/Week0/`).
+1.  Người dùng truy cập vào URL gốc của ứng dụng (ví dụ: `http://localhost:8080/Lesson/`).
 2.  Tomcat nhận yêu cầu và chuyển đến `ProfileServlet` (do được map với URL `""` qua annotation `@WebServlet`).
 3.  `ProfileServlet` được khởi tạo, phương thức `init()` sẽ đọc file `student.json` từ `resources` và dùng thư viện Gson để chuyển dữ liệu thành đối tượng `Student`.
 4.  Servlet đặt đối tượng `student` này vào `request scope`.
@@ -85,12 +85,12 @@ Week0/
     ```bash
     mvn clean package
     ```
-    Lệnh này sẽ tạo ra một file `Week0.war` trong thư mục `target`.
+    Lệnh này sẽ tạo ra một file `Lesson.war` trong thư mục `target`.
 
 3.  **Triển khai trên Tomcat:**
-    -   Sao chép file `Week0.war` vừa tạo vào thư mục `webapps` của Tomcat.
+    -   Sao chép file `Lesson.war` vừa tạo vào thư mục `webapps` của Tomcat.
     -   Khởi động Tomcat. Máy chủ sẽ tự động giải nén và triển khai ứng dụng.
-    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Week0/`
+    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Lesson/`
 
 ---
 

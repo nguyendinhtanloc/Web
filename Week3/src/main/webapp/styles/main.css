@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    background: linear-gradient(135deg, #B6DDDA, #F9D678);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 2.5em 3em;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.logo {
+    max-width: 140px;
+}
+
+h1 {
+    font-size: 1.9em;
+    text-align: center;
+    color: #13313D;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 1.3em;
+    margin: 1.8em 0 0.8em;
+    color: #01877E;
+    position: relative;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FFB0A9;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 0.4em;
+    font-weight: 600;
+    color: #13313D;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    padding: 0.75em 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95em;
+    transition: 0.3s;
+}
+input:focus,
+select:focus {
+    border-color: #01877E;
+    box-shadow: 0 0 6px rgba(1, 135, 126, 0.4);
+    outline: none;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+.radio-group label,
+.checkbox-label {
+    font-weight: normal;
+    cursor: pointer;
+    color: #333;
+}
+
+#submit {
+    align-self: flex-start;
+    margin-top: 1.5em;
+    padding: 12px 26px;
+    background: #01877E;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+#submit:hover {
+    background: #13313D;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

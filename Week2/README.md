@@ -90,9 +90,9 @@ Week2/
     Lệnh này sẽ biên dịch code, chạy các kiểm thử (nếu có), và đóng gói ứng dụng thành một file `.war` trong thư mục `target`.
 
 3.  **Triển khai trên Tomcat:**
-    -   Sao chép file `Week2.war` (hoặc tên tương tự) từ thư mục `target` vào thư mục `webapps` của Tomcat.
+    -   Sao chép file `Lesson.war` (hoặc tên tương tự) từ thư mục `target` vào thư mục `webapps` của Tomcat.
     -   Khởi động Tomcat. Máy chủ sẽ tự động giải nén và triển khai ứng dụng của bạn.
-    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Week2/` (tên context path thường trùng với tên file `.war`).
+    -   Truy cập vào trình duyệt theo địa chỉ: `http://localhost:8080/Lesson/` (tên context path thường trùng với tên file `.war`).
 
 ---
 
