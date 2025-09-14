@@ -21,7 +21,7 @@
 button in your browser or the Return button shown 
 below.</p>
 
-<form action="emailList" method="post">
+<form action="survey" method="post">
     <input type="hidden" name="action" value="join">
     <input type="submit" value="Return">
 </form>
