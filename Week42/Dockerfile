@@ -7,7 +7,7 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/*
 
 # Copy WAR đã build sẵn từ target vào webapps
-COPY TomCat/webapps/*.war webapps/ROOT.war
+COPY tomCat/webapps/*.war webapps/ROOT.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
