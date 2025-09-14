@@ -6,8 +6,8 @@ WORKDIR /usr/local/tomcat
 # Xóa webapp mặc định của Tomcat
 RUN rm -rf webapps/*
 
-# Copy WAR đã build sẵn từ thư mục host (TomCat/webapps) vào container
-COPY TomCat/webapps/*.war webapps/ROOT.war
+# Copy WAR đã build sẵn từ target vào webapps
+COPY target/Lesson.war webapps/
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
