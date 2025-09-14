@@ -26,7 +26,7 @@ Dự án được xây dựng và vận hành với các công nghệ và công 
 
 Dự án tuân theo cấu trúc chuẩn của một Maven Web Application, đảm bảo sự tách biệt rõ ràng giữa logic, giao diện và tài nguyên.
 
-Week2/
+Week3/
 ├── pom.xml
 └── src/
     └── main/

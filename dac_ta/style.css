@@ -1,0 +1,221 @@
+/* --- BIẾN TOÀN CỤC (COLOR PALETTE) --- */
+:root {
+    --c-deep-teal: #0081A7;
+    --c-bright-teal: #00AFB9;
+    --c-cream: #FDFCDC;
+    --c-peach: #FED9B7;
+    --c-coral: #F07167;
+    --c-dark-text: #2c3e50;
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+/* --- THIẾT LẬP CƠ BẢN --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-serif);
+    background-color: var(--c-cream);
+    color: var(--c-dark-text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* --- BỐ CỤC CHÍNH --- */
+.container {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* --- THANH ĐIỀU HƯỚNG (SIDEBAR) --- */
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background-color: var(--c-deep-teal);
+    color: var(--c-cream);
+    padding: 2.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    font-family: var(--font-sans);
+}
+
+.sidebar header {
+    margin-bottom: 2.5rem;
+    padding: 0 0.5rem;
+}
+
+.sidebar header h1 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: white;
+}
+
+.sidebar header p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: var(--c-cream);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--c-bright-teal);
+    color: white;
+}
+
+.sidebar ul li a.active {
+    background-color: var(--c-coral);
+    color: white;
+    font-weight: 700;
+}
+
+/* --- NỘI DUNG CHÍNH (MAIN CONTENT) --- */
+main.content {
+    flex-grow: 1;
+    padding: 2rem 4rem;
+    background-color: white;
+}
+
+main section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #eef0f3;
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--c-deep-teal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--c-peach);
+}
+
+h4 {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--c-dark-text);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p, ul, ol {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+b, strong {
+    font-weight: 700;
+    color: #000;
+}
+
+a {
+    color: var(--c-bright-teal);
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    background-color: #f7f9fa;
+    border: 1px solid #eef0f3;
+    padding: 1.5rem;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--c-peach);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* --- TABLE STYLES --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 15px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #eef0f3;
+}
+
+thead {
+    background-color: var(--c-deep-teal);
+    color: white;
+}
+thead th {
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafd;
+}
+tbody tr:hover {
+    background-color: var(--c-peach);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    main.content {
+        padding: 2rem 1.5rem;
+    }
+}

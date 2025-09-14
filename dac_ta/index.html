@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặc tả Dự án | Hệ thống Đặt Vé Xe Khách Trực Tuyến</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <header>
+                <h1>Đặt Vé Xe Khách</h1>
+                <p>Tài liệu Đặc tả Dự án</p>
+            </header>
+            <ul class="nav-links">
+                <li><a href="#section-1" class="active">Giới thiệu</a></li>
+                <li><a href="#section-2">Yêu cầu Chức năng</a></li>
+                <li><a href="#section-3">Giao diện (UI/UX)</a></li>
+                <li><a href="#section-4">Kiến trúc & Công nghệ</a></li>
+                <li><a href="#section-5">Rủi ro & Giải pháp</a></li>
+                <li><a href="#section-6">Quản lý Dự án</a></li>
+                <li><a href="#section-7">Định hướng Tương lai</a></li>
+                <li><a href="#section-8">Tài liệu Tham khảo</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="section-1">
+                <h2>GIỚI THIỆU TỔNG QUAN</h2>
+                <h4>Tên hệ thống</h4>
+                <p>Hệ thống Đặt Vé Xe Khách Trực Tuyến</p>
+
+                <h4>Mục tiêu và Phạm vi Dự án</h4>
+                <p>Dự án hướng đến việc xây dựng một nền tảng web toàn diện, giải quyết bài toán đặt vé xe khách theo phương thức hiện đại, tiện lợi và hiệu quả...</p>
+                
+                <h4>Phân tích Đối tượng Người dùng</h4>
+                <ul>
+                    <li><b>Khách hàng:</b> Các cá nhân, gia đình, hoặc tổ chức có nhu cầu di chuyển bằng xe khách.</li>
+                    <li><b>Đối tác Nhà xe:</b> Các doanh nghiệp vận tải hành khách muốn tối ưu hóa việc quản lý và mở rộng kênh bán vé.</li>
+                    <li><b>Quản trị viên (Admin):</b> Đội ngũ vận hành và quản lý kỹ thuật của hệ thống.</li>
+                </ul>
+            </section>
+
+            <section id="section-2">
+                <h2>ĐẶC TẢ YÊU CẦU CHỨC NĂNG</h2>
+                <h4>Phân hệ Khách hàng</h4>
+                <table>
+                    <thead><tr><th>Chức năng</th><th>Mô tả chi tiết</th></tr></thead>
+                    <tbody>
+                        <tr><td>Đăng ký/Đăng nhập</td><td>Người dùng có thể đăng ký/đăng nhập bằng email hoặc số điện thoại, hỗ trợ quên mật khẩu.</td></tr>
+                        <tr><td>Tìm chuyến xe</td><td>Tìm kiếm chuyến xe linh hoạt theo điểm đi, điểm đến và ngày khởi hành.</td></tr>
+                        <tr><td>Chọn ghế ngồi</td><td>Hiển thị sơ đồ ghế trực quan, cập nhật trạng thái ghế trống theo thời gian thực.</td></tr>
+                        <tr><td>Thanh toán</td><td>Hỗ trợ nhiều phương thức: thẻ ATM, ví điện tử (VNPay, MoMo). Cho phép "Giữ ghế".</td></tr>
+                        <tr><td>Quản lý vé</td><td>Nhận vé điện tử chứa mã QR qua email. Xem lại lịch sử, thực hiện hủy/đổi vé online.</td></tr>
+                        <tr><td>Theo dõi hành trình</td><td>Theo dõi trạng thái của chuyến đi (sắp khởi hành, đang di chuyển).</td></tr>
+                        <tr><td>Tương tác & Đánh giá</td><td>Đánh giá chất lượng dịch vụ, tài xế sau chuyến đi. Gửi phản hồi, khiếu nại.</td></tr>
+                    </tbody>
+                </table>
+                <h4>Phân hệ Nhà xe</h4>
+                <h4>Các tính năng nâng cao dự kiến</h4>
+                <ul>
+                    <li>Đặt vé dài hạn: Cho phép đặt trước nhiều tuần hoặc nhiều tháng.</li>
+                    <li>Thông báo nhắc chuyến: Gửi SMS/email tự động nhắc nhở trước giờ khởi hành.</li>
+                    <li>Hủy/đổi vé online: Người dùng tự thao tác hủy/đổi vé theo chính sách của nhà xe.</li>
+                    <li>Tích điểm thưởng: Xây dựng hệ thống khách hàng thân thiết.</li>
+                    <li>Xuất hóa đơn điện tử: Tự động xuất hóa đơn cho các giao dịch thành công.</li>
+                </ul>
+            </section>
+            
+            <section id="section-3">
+                <h2>GIAO DIỆN NGƯỜI DÙNG DỰ KIẾN (UI/UX)</h2>
+                <table>
+                    <thead><tr><th>Chức năng</th><th>Mô tả chi tiết</th></tr></thead>
+                    <tbody>
+                        <tr><td>Trang chủ</td><td>Nổi bật form tìm kiếm nhanh (điểm đi, điểm đến, ngày), hiển thị các tuyến xe phổ biến.</td></tr>
+                        <tr><td>Trang kết quả tìm kiếm</td><td>Liệt kê các chuyến xe phù hợp: thông tin nhà xe, giờ khởi hành, giá vé, số ghế trống.</td></tr>
+                        <tr><td>Trang chọn ghế</td><td>Sơ đồ ghế trực quan, hiển thị rõ ghế trống, ghế đã đặt, ghế đang chọn. Cập nhật realtime.</td></tr>
+                        <tr><td>Trang thanh toán</td><td>Giao diện lựa chọn phương thức thanh toán, nhập thông tin và xác nhận đặt vé an toàn.</td></tr>
+                        <tr><td>Trang vé điện tử</td><td>Hiển thị mã QR lớn, rõ ràng cùng toàn bộ thông tin chi tiết của vé.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="section-4">
+                <h2>KIẾN TRÚC VÀ CÔNG NGHỆ SỬ DỤNG</h2>
+                <h4>Công nghệ chính</h4>
+                <h4>Cấu trúc thư mục dự án dự kiến</h4>
+                <pre><code>BusBooking/
+└── src/
+    └── main/
+        ├── java/
+        │   └── com/busbooking/
+        │       ├── auth/
+        │       ├── trip/
+        │       ├── booking/
+        │       ├── payment/
+        │       ├── admin/
+        │       ├── feedback/
+        │       ├── model/
+        │       └── util/
+        └── webapp/
+            ├── WEB-INF/
+            │   ├── jsp/
+            │   └── web.xml
+            └── static/
+                ├── css/
+                ├── js/
+                └── images/
+</code></pre>
+                <h4>Cấu hình Cơ sở dữ liệu</h4>
+                <p>Nền tảng: Supabase (PostgreSQL).<br>Lưu ý bảo mật: Chỉ sử dụng anon key cho phía client. Khuyến nghị lưu key trong biến môi trường (.env).</p>
+            </section>
+
+            <section id="section-5">
+                <h2>PHÂN TÍCH RỦI RO VÀ GIẢI PHÁP</h2>
+                <table>
+                    <thead><tr><th>Vấn đề tiềm ẩn</th><th>Giải pháp khắc phục</th></tr></thead>
+                    <tbody>
+                        <tr><td>Nguồn dữ liệu từ nhà xe ban đầu</td><td>Tạo dữ liệu giả lập cho 5-10 nhà xe hoặc tập trung vào 1 nhà xe đối tác ban đầu.</td></tr>
+                        <tr><td>Làm sao để theo dõi lộ trình xe</td><td>Cập nhật trạng thái theo mốc thời gian định trước hoặc xây dựng app đơn giản cho tài xế gửi tọa độ GPS.</td></tr>
+                        <tr><td>Quy trình kiểm tra vé khi lên xe</td><td>Sử dụng mã QR trên vé điện tử và cung cấp giao diện web di động cho tài xế để quét mã.</td></tr>
+                        <tr><td>Lỗi tương tranh (race condition) khi nhiều người cùng chọn 1 ghế?</td><td>Áp dụng cơ chế "khóa ghế" tạm thời trong 5-10 phút để người dùng hoàn tất thanh toán.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="section-6">
+                <h2>QUẢN LÝ DỰ ÁN VÀ TRIỂN KHAI</h2>
+                <h4>Phân công nhiệm vụ</h4>
+                 <h4>Kế hoạch và mốc thời gian</h4>
+                <table>
+                    <thead><tr><th>Mốc</th><th>Nội dung công việc</th></tr></thead>
+                    <tbody>
+                        <tr><td>20/08/2025</td><td>Khởi động dự án: phân chia công việc, thống nhất yêu cầu, thiết lập môi trường.</td></tr>
+                        <tr><td>25/08/2025</td><td>Thiết kế cơ sở dữ liệu trên Supabase, xác định quan hệ bảng.</td></tr>
+                        <tr><td>08/09/2025</td><td>Hoàn thiện các module backend nền tảng (đăng nhập, đăng ký, quản lý người dùng).</td></tr>
+                        <tr><td>16/09/2025</td><td>Tích hợp Frontend và Backend của các module chính.</td></tr>
+                        <tr><td>20/09/2025</td><td>Biên soạn tài liệu báo cáo và thiết kế slide trình bày.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="section-7">
+                <h2>ĐỊNH HƯỚNG PHÁT TRIỂN TƯƠNG LAI</h2>
+                 <ul>
+                    <li>Phát triển ứng dụng di động (Mobile App) song song với phiên bản web.</li>
+                    <li>Tích hợp và kết nối với các hệ thống lớn khác như VeXeRe, BusMap.</li>
+                    <li>Xây dựng tính năng gợi ý chuyến đi thông minh dựa trên lịch sử và hành vi của người dùng.</li>
+                    <li>Mở rộng mô hình sang bus sharing / carpooling (đi chung xe).</li>
+                </ul>
+            </section>
+
+             <section id="section-8">
+                <h2>TÀI LIỆU THAM KHẢO</h2>
+                 <p>Hoàng Duy Tân (2018) – Ứng dụng CNTT trong quản lý dịch vụ vận tải hành khách, Tạp chí KH&CN Giao thông Vận tải.</p>
+                 <p>Nguyễn Thị Hương (2022) – Phát triển hệ thống đặt vé trực tuyến: Thực trạng và giải pháp, Tạp chí Công nghệ Thông tin & Truyền thông.</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('main section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
