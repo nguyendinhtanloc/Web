@@ -46,8 +46,11 @@
       "tuan": "Tuần 6",
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week42",
       "renderLink": "https://lesson42.onrender.com/"
-    }
-
-    
+    },
+    {
+      "tuan": "Tuần 7",
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week5",
+      "renderLink": "https://lesson5-jfv6.onrender.com"
+    }    
   ]
 }

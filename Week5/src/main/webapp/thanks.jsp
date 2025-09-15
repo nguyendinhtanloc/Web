@@ -3,8 +3,6 @@
 
 <h1>Thanks for joining our email list</h1>
 
-h1>Thanks for joining our email list</h1>
-
 <p>Here is the information that you entered:</p>
 <label>Email:</label>
 <span>${user.email}</span><br>
