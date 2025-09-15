@@ -5,44 +5,30 @@
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>Lesson Web Application</display-name>
+    <display-name>Cart Web Application</display-name>
 
-    <!-- Servlet cho Email List -->
+    <!-- Servlet load danh sách sản phẩm -->
     <servlet>
-        <servlet-name>EmailListServlet</servlet-name>
-        <servlet-class>murach.email.EmailListServlet</servlet-class>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>murach.cart.ProductsServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>EmailListServlet</servlet-name>
-        <url-pattern>/emailList</url-pattern>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
     </servlet-mapping>
 
-    <!-- Servlet cho Download App (exercise 9) -->
+    <!-- Servlet quản lý giỏ hàng -->
     <servlet>
-        <servlet-name>DownloadServlet</servlet-name>
-        <servlet-class>murach.download.DownloadServlet</servlet-class>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>murach.cart.CartServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>DownloadServlet</servlet-name>
-        <url-pattern>/download</url-pattern>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/cart</url-pattern>
     </servlet-mapping>
 
-    <!-- Ngăn scriptlet trong JSP -->
-    <jsp-config>
-        <jsp-property-group>
-            <url-pattern>*.jsp</url-pattern>
-            <scripting-invalid>true</scripting-invalid>
-        </jsp-property-group>
-    </jsp-config>
-
-    <!-- Tham số context -->
-    <context-param>
-        <param-name>custServEmail</param-name>
-        <param-value>custserv@murach.com</param-value>
-    </context-param>
-
-    <!-- Welcome page -->
+    <!-- Trang mặc định: chạy ProductsServlet -->
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>products</welcome-file>
     </welcome-file-list>
 </web-app>
