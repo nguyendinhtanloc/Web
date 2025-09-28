@@ -1,125 +1,257 @@
 :root {
-    --dark-purple: #5D2A42;
-    --coral-pink: #FB6376;
-    --light-pink: #FCB1A6;
-    --beige: #FFDCCC;
-    --cream-bg: #FFF9EC;
+    /* Dải màu của bạn */
+    --color-primary: #7AB8BF; /* Xanh xám đậm - dùng cho nền chính, tiêu đề quan trọng */
+    --color-secondary: #A7D9C6; /* Xanh ngọc nhạt - dùng cho nền phụ, điểm nhấn */
+    --color-accent-1: #D9CD91; /* Vàng đất - dùng cho viền, các chi tiết nhỏ */
+    --color-accent-2: #D9765F; /* Nâu đất/Cam đất - dùng cho nút hành động, hover */
+    --color-light-bg: #F2D5D5; /* Hồng nhạt/Be hồng - dùng cho nền các thành phần nhẹ */
+
+    /* Các màu cơ bản khác */
+    --text-dark: #333;
+    --text-light: #555;
+    --card-bg: #ffffff;
+    --body-bg: #f8f8f8; /* Nền toàn trang hơi nhạt để các khối nổi bật */
+    --card-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* --- Global Styles & Body --- */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--cream-bg); /* Màu nền chính */
-    color: var(--dark-purple); /* Màu chữ chính */
+    background-color: var(--body-bg);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 30px 20px; /* Tăng padding để có không gian thở */
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+    min-height: 100vh; /* Đảm bảo footer luôn ở cuối trang */
 }
 
-.card {
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(93, 42, 66, 0.15); /* Shadow với màu tím đậm */
-    max-width: 800px;
+.container {
+    max-width: 1000px;
     width: 100%;
-    overflow: hidden;
-    border: 1px solid var(--beige);
+    display: flex; /* Dùng flexbox cho container chính */
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    gap: 30px; /* Khoảng cách giữa các section */
 }
 
-.card-header {
-    background-color: var(--dark-purple); /* Màu header */
-    color: white;
-    padding: 20px 30px;
+/* --- Hero Section (Phần giới thiệu) --- */
+.hero {
+    text-align: center;
+    padding: 50px 30px; /* Tăng padding */
+    background: var(--card-bg);
+    border-radius: 20px; /* Bo tròn nhiều hơn */
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--color-light-bg); /* Viền nhẹ */
 }
 
-.card-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.card-body {
-    padding: 30px;
-}
-
-.profile-section {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--beige); /* Màu viền */
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-}
-
-.profile-pic {
-    flex-shrink: 0;
-    margin-right: 30px;
-}
-
-.profile-pic img {
-    width: 150px;
-    height: 150px;
+.hero-avatar {
+    width: 180px; /* Ảnh lớn hơn một chút */
+    height: 180px;
     border-radius: 50%;
-    border: 5px solid #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 7px solid var(--color-secondary); /* Viền ảnh nổi bật hơn */
     object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Thêm shadow cho ảnh */
 }
 
-.profile-info p {
-    margin: 8px 0;
-    font-size: 16px;
+.hero h1 {
+    margin: 0;
+    font-size: 42px; /* Font lớn hơn */
+    color: var(--color-primary); /* Màu xanh xám đậm */
+    letter-spacing: -0.5px; /* Giãn chữ nhẹ */
 }
 
-.profile-info strong {
-    color: var(--dark-purple);
-    min-width: 120px;
-    display: inline-block;
+.hero h2 {
+    margin: 10px 0 25px 0;
+    font-size: 22px;
+    font-weight: 500; /* Đậm vừa */
+    color: var(--color-accent-2); /* Màu cam đất */
 }
 
-.assignments-section h2 {
-    font-size: 20px;
+.hero-bio {
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Margin dưới lớn hơn */
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.hero-socials a {
+    color: var(--color-primary); /* Icon mạng xã hội màu xanh xám đậm */
+    font-size: 28px;
+    margin: 0 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-socials a:hover {
+    color: var(--color-accent-2); /* Hover đổi sang cam đất */
+    transform: translateY(-3px) scale(1.1); /* Hiệu ứng nhẹ khi hover */
+}
+
+/* --- Projects Section (Phần dự án) --- */
+.projects-section {
+    padding: 30px 0; /* Padding trên dưới */
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Khoảng cách lớn hơn */
+    font-size: 34px;
+    color: var(--color-primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.projects-section h2::after { /* Đường gạch chân hiện đại */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-accent-2);
+    border-radius: 2px;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Min size lớn hơn chút */
+    gap: 30px; /* Khoảng cách lớn hơn giữa các card */
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 12px; /* Bo tròn vừa phải */
+    padding: 30px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-accent-1); /* Viền màu vàng đất nhẹ */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Nổi lên nhiều hơn khi hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Shadow đậm hơn khi hover */
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--color-primary); /* Tên dự án màu xanh xám đậm */
     margin-bottom: 15px;
-    color: var(--coral-pink); /* Màu tiêu đề phụ */
 }
 
-.assignment-table {
-    width: 100%;
-    border-collapse: collapse;
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 25px;
+    color: var(--text-light);
 }
 
-.assignment-table th, .assignment-table td {
-    border: 1px solid var(--beige); /* Màu viền bảng */
-    padding: 12px 15px;
-    text-align: left;
-    vertical-align: middle;
+.project-tech {
+    margin-bottom: 25px;
+    display: flex; /* Dùng flexbox cho các tag */
+    flex-wrap: wrap; /* Cho phép các tag xuống dòng */
+    gap: 8px; /* Khoảng cách giữa các tag */
 }
 
-.assignment-table th {
-    background-color: var(--cream-bg); /* Màu nền header bảng */
+.tech-tag {
+    display: inline-block;
+    background-color: var(--color-secondary); /* Tag màu xanh ngọc nhạt */
+    color: var(--text-dark);
+    padding: 7px 14px;
+    border-radius: 20px; /* Bo tròn tag */
+    font-size: 13px;
     font-weight: 500;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex; /* Dùng flexbox cho các nút */
+    flex-wrap: wrap; /* Cho phép nút xuống dòng */
+    gap: 15px; /* Khoảng cách giữa các nút */
 }
 
 .btn {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 5px;
+    display: inline-flex; /* Dùng inline-flex để căn giữa icon và text */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 12px 20px; /* Tăng padding cho nút */
+    border-radius: 8px; /* Bo tròn nút */
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
+    font-weight: 600; /* Đậm hơn */
+    transition: all 0.3s ease;
+    border: none;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-4px); /* Hiệu ứng nổi lên mạnh hơn */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow đậm hơn */
+}
+
+.btn i {
+    margin-right: 10px; /* Tăng khoảng cách icon */
 }
 
 .btn-github {
-    background-color: var(--dark-purple); /* Nút màu tím đậm */
+    background-color: var(--color-primary); /* Nút GitHub màu xanh xám đậm */
+}
+.btn-github:hover {
+    background-color: #5d9ba3; /* Đậm hơn một chút khi hover */
 }
 
 .btn-deploy {
-    background-color: var(--coral-pink); /* Nút màu hồng san hô */
+    background-color: var(--color-accent-2); /* Nút Demo màu cam đất */
+}
+.btn-deploy:hover {
+    background-color: #c0634e; /* Đậm hơn một chút khi hover */
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    margin-top: 60px; /* Khoảng cách lớn hơn */
+    padding: 30px 20px;
+    color: var(--text-light);
+    font-size: 15px;
+    border-top: 1px solid var(--color-light-bg); /* Đường viền nhẹ phía trên */
+}
+
+.footer a {
+    color: var(--color-accent-2); /* Link email màu cam đất */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+    .hero-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Một cột trên màn hình nhỏ */
+    }
+    .btn {
+        width: 100%; /* Nút chiếm hết chiều rộng */
+        justify-content: center; /* Căn giữa nội dung nút */
+    }
+    .project-links {
+        gap: 10px; /* Khoảng cách nhỏ hơn giữa các nút trên di động */
+    }
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiến trúc & Công nghệ | Hệ thống Đặt Vé Xe Khách Trực Tuyến</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <header>
+                <h1>Đặt Vé Xe Khách</h1>
+                <p>Tài liệu Đặc tả Dự án</p>
+            </header>
+            <ul class="nav-links">
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="yeu-cau-chuc-nang.html">Yêu cầu Chức năng</a></li>
+                <li><a href="giao-dien-ui-ux.html">Giao diện (UI/UX)</a></li>
+                <li><a href="kien-truc-cong-nghe.html" class="active">Kiến trúc & Công nghệ</a></li>
+                <li><a href="rui-ro-giai-phap.html">Rủi ro & Giải pháp</a></li>
+                <li><a href="quan-ly-du-an.html">Quản lý Dự án</a></li>
+                <li><a href="dinh-huong-tuong-lai.html">Định hướng Tương lai</a></li>
+                <li><a href="tai-lieu-tham-khao.html">Tài liệu Tham khảo</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="section-4">
+                <h2>KIẾN TRÚC VÀ CÔNG NGHỆ SỬ DỤNG</h2>
+                <h4>Công nghệ chính</h4>
+                <h4>Cấu trúc thư mục dự án dự kiến</h4>
+                <pre><code>BusBooking/
+└── src/
+    └── main/
+        ├── java/
+        │   └── com/busbooking/
+        │       ├── auth/
+        │       ├── trip/
+        │       ├── booking/
+        │       ├── payment/
+        │       ├── admin/
+        │       ├── feedback/
+        │       ├── model/
+        │       └── util/
+        └── webapp/
+            ├── WEB-INF/
+            │   ├── jsp/
+            │   └── web.xml
+            └── static/
+                ├── css/
+                ├── js/
+                └── images/
+</code></pre>
+                <h4>Cấu hình Cơ sở dữ liệu</h4>
+                <p>Nền tảng: Supabase (PostgreSQL).<br>Lưu ý bảo mật: Chỉ sử dụng anon key cho phía client. Khuyến nghị lưu key trong biến môi trường (.env).</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

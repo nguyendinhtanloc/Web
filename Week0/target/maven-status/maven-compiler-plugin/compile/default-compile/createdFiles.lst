@@ -1,3 +1,4 @@
-vn/loc/model/Student.class
-vn/loc/model/Assignment.class
+vn/loc/model/Profile.class
+vn/loc/model/Project.class
+vn/loc/model/SocialLink.class
 vn/loc/controller/ProfileServlet.class

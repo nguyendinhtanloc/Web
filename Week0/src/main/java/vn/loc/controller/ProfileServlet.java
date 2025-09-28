@@ -1,7 +1,7 @@
 package vn.loc.controller;
 
 import com.google.gson.Gson;
-import vn.loc.model.Student;
+import vn.loc.model.Profile;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,22 +14,20 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 
-@WebServlet("") // Map servlet này với URL gốc của web
+@WebServlet("")
 public class ProfileServlet extends HttpServlet {
-    private Student studentInfo;
+    private Profile profileInfo;
 
     @Override
     public void init() throws ServletException {
-        // Đọc file JSON chỉ một lần khi servlet khởi tạo để tối ưu hiệu suất
         Gson gson = new Gson();
-        try (InputStream is = getServletContext().getResourceAsStream("/WEB-INF/classes/student.json");
+        try (InputStream is = getClass().getClassLoader().getResourceAsStream("profile.json");
              Reader reader = new InputStreamReader(is, StandardCharsets.UTF_8)) {
-            
+
             if (is == null) {
-                throw new ServletException("Không tìm thấy file student.json. Hãy đảm bảo file nằm trong src/main/resources");
+                throw new ServletException("Không tìm thấy file profile.json. Hãy đảm bảo file nằm trong thư mục 'src/main/resources'");
             }
-            
-            this.studentInfo = gson.fromJson(reader, Student.class);
+            this.profileInfo = gson.fromJson(reader, Profile.class);
 
         } catch (IOException e) {
             throw new ServletException("Lỗi khi đọc file JSON", e);
@@ -38,10 +36,7 @@ public class ProfileServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Đặt đối tượng student vào request để JSP có thể truy cập
-        request.setAttribute("student", this.studentInfo);
-        
-        // Chuyển tiếp request đến file index.jsp để hiển thị
+        request.setAttribute("profile", this.profileInfo);
         request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
 }

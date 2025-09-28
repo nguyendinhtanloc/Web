@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rủi ro & Giải pháp | Hệ thống Đặt Vé Xe Khách Trực Tuyến</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <header>
+                <h1>Đặt Vé Xe Khách</h1>
+                <p>Tài liệu Đặc tả Dự án</p>
+            </header>
+            <ul class="nav-links">
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="yeu-cau-chuc-nang.html">Yêu cầu Chức năng</a></li>
+                <li><a href="giao-dien-ui-ux.html">Giao diện (UI/UX)</a></li>
+                <li><a href="kien-truc-cong-nghe.html">Kiến trúc & Công nghệ</a></li>
+                <li><a href="rui-ro-giai-phap.html" class="active">Rủi ro & Giải pháp</a></li>
+                <li><a href="quan-ly-du-an.html">Quản lý Dự án</a></li>
+                <li><a href="dinh-huong-tuong-lai.html">Định hướng Tương lai</a></li>
+                <li><a href="tai-lieu-tham-khao.html">Tài liệu Tham khảo</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="section-5">
+                <h2>PHÂN TÍCH RỦI RO VÀ GIẢI PHÁP</h2>
+                <table>
+                    <thead><tr><th>Vấn đề tiềm ẩn</th><th>Giải pháp khắc phục</th></tr></thead>
+                    <tbody>
+                        <tr><td>Nguồn dữ liệu từ nhà xe ban đầu</td><td>Tạo dữ liệu giả lập cho 5-10 nhà xe hoặc tập trung vào 1 nhà xe đối tác ban đầu.</td></tr>
+                        <tr><td>Làm sao để theo dõi lộ trình xe</td><td>Cập nhật trạng thái theo mốc thời gian định trước hoặc xây dựng app đơn giản cho tài xế gửi tọa độ GPS.</td></tr>
+                        <tr><td>Quy trình kiểm tra vé khi lên xe</td><td>Sử dụng mã QR trên vé điện tử và cung cấp giao diện web di động cho tài xế để quét mã.</td></tr>
+                        <tr><td>Lỗi tương tranh (race condition) khi nhiều người cùng chọn 1 ghế?</td><td>Áp dụng cơ chế "khóa ghế" tạm thời trong 5-10 phút để người dùng hoàn tất thanh toán.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
