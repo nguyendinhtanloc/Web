@@ -1,12 +1,28 @@
 {
   "fullName": "Nguyễn Đình Tấn Lộc",
-  "headline": "Web Developer | Student",
-  "bio": "Sinh viên ngành Công nghệ thông tin với định hướng phát triển web. Tập trung vào việc xây dựng các ứng dụng web sạch, hiệu quả và có khả năng mở rộng.",
+  "headline": "Web Developer | Data Engineering Student",
+  "bio": "Sinh viên đam mê xây dựng các giải pháp công nghệ sạch, hiệu quả và có khả năng mở rộng.",
+  "aboutMe": "Hành trình của tôi với lập trình bắt đầu từ một sự tò mò đơn giản: làm thế nào một trang web có thể hiển thị thông tin từ khắp nơi trên thế giới chỉ sau một cú nhấp chuột? Sự tò mò đó đã dẫn dắt tôi từ những dòng HTML đầu tiên đến việc xây dựng các ứng dụng web có logic phức tạp bằng Java. Tôi nhanh chóng nhận ra mình không chỉ thích tạo ra giao diện, mà còn đam mê việc xây dựng \"bộ não\" và hệ thống xương sống đằng sau nó.\n\nĐiều khiến tôi say mê công nghệ chính là khả năng biến những ý tưởng trừu tượng thành các giải pháp hữu hình, giải quyết những vấn đề thực tế. Với chuyên ngành Kỹ thuật Dữ liệu, tôi tìm thấy niềm vui trong việc thiết kế các 'đường ống' dữ liệu hiệu quả, xây dựng nền tảng vững chắc để thông tin có thể chảy một cách trơn tru và an toàn. Đó giống như việc trở thành một kiến trúc sư cho những dòng chảy thông tin, và tôi tin rằng đây chính là nền móng của mọi quyết định thông minh trong tương lai.",
   "email": "23133041@student.hcmute.edu.vn",
+  "education": {
+    "school": "Đại học Sư phạm Kỹ thuật TP.HCM",
+    "major": "Kỹ thuật Dữ liệu",
+    "years": "2023 - 2027"
+  },
+  "skills": [
+    "Java",
+    "SQL",
+    "JSP",
+    "Servlet",
+    "Git",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "socials": [
     {
       "name": "GitHub",
-      "link": "https://github.com/nguyendinhtanloc",
+      "link": "https://github.com/nguyendinhtanloc/Web",
       "icon": "fab fa-github"
     }
   ],
@@ -14,79 +30,218 @@
     {
       "projectName": "Bài tập tổng hợp",
       "description": "Tổng hợp các bài tập trong môn Lập trình Web.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop",
       "demoLink": "https://lesson0.onrender.com"
     },
     {
-      "projectName": "Bài tập Tuần 0",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 0.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 1",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week0",
       "demoLink": "https://lesson0.onrender.com"
     },
     {
-      "projectName": "Bài tập Tuần 1",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 1.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 2",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week1",
       "demoLink": "https://web-srqn.onrender.com"
     },
     {
-      "projectName": "Bài tập Tuần 2",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 2.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 3",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week2",
       "demoLink": "https://lesson-b5ye.onrender.com/"
     },
     {
-      "projectName": "Bài tập Tuần 3",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 3.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 4",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week2",
       "demoLink": "https://lesson-b5ye.onrender.com/"
     },
     {
-      "projectName": "Bài tập Tuần 4",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 4.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 5",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week3",
       "demoLink": "https://lesson3-44rj.onrender.com/"
     },
     {
-      "projectName": "Bài tập Tuần 5",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 5.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 6",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week41",
       "demoLink": "https://lesson41.onrender.com/"
     },
     {
-      "projectName": "Bài tập Tuần 6",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 6.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 7",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week42",
       "demoLink": "https://lesson42.onrender.com/"
     },
     {
-      "projectName": "Bài tập Tuần 7",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 7.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 8",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week5",
       "demoLink": "https://lesson5-jfv6.onrender.com"
     },
     {
-      "projectName": "Bài tập Tuần 8",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 8.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 9",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week61",
       "demoLink": "https://lesson61.onrender.com/"
     },
     {
-      "projectName": "Bài tập Tuần 9",
-      "description": "Bài tập cho môn học Lập trình Web - Tuần 9.",
-      "technologies": ["Java Servlet", "JSP", "HTML"],
+      "projectName": "Bài tập 10",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
       "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week62",
       "demoLink": "https://lesson62.onrender.com"
+    },
+    {
+      "projectName": "Bài tập 11",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week7",
+      "demoLink": "https://lesson5-jfv6.onrender.com/"
+    },
+    {
+      "projectName": "Bài tập 12",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week81",
+      "demoLink": "https://lesson71.onrender.com"
+    },
+    {
+      "projectName": "Bài tập 13",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week82",
+      "demoLink": "https://lesson72.onrender.com"
+    },
+    {
+      "projectName": "Bài tập 14",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week83",
+      "demoLink": "https://lesson73.onrender.com"
+    },
+    {
+      "projectName": "Bài tập 15",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week9",
+      "demoLink": "https://lesson9-h9zc.onrender.com"
+    },
+    {
+      "projectName": "Bài tập 16",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week10",
+      "demoLink": "https://lesson12-8f86.onrender.com"
+    },
+    {
+      "projectName": "Bài tập 17",
+      "description": "Bài tập cho môn học Lập trình Web",
+      "technologies": [
+        "Java Servlet",
+        "JSP",
+        "HTML",
+        "CSS"
+      ],
+      "githubLink": "https://github.com/nguyendinhtanloc/Web/tree/develop/Week11",
+      "demoLink": "https://lesson13-2uoy.onrender.com"
     }
   ]
 }

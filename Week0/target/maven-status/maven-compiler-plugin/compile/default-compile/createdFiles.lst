@@ -1,4 +1,5 @@
 vn/loc/model/Profile.class
 vn/loc/model/Project.class
 vn/loc/model/SocialLink.class
+vn/loc/model/Education.class
 vn/loc/controller/ProfileServlet.class
