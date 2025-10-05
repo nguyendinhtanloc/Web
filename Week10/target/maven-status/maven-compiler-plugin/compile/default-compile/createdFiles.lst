@@ -1,0 +1,7 @@
+murach/data/DBUtil.class
+murach/service/UserService.class
+murach/sql/SqlGatewayServlet.class
+murach/business/User.class
+murach/admin/UsersServlet.class
+murach/sql/SQLUtil.class
+murach/data/UserRepository.class
