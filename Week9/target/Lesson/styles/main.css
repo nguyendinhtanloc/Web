@@ -1,0 +1,134 @@
+/* Reset & base */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #eef2f7;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Layout wrapper */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #1e88e5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #cfd8dc;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #dfe6e9;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background-color: #f1f3f6;
+    color: #34495e;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f9fbfd;
+}
+
+/* Forms */
+form {
+    display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+input[type="text"], input[type="email"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Utility classes */
+.pad_top {
+    margin-top: 10px;
+    display: block;
+}
+
+.margin_left {
+    margin-left: 10px;
+}
