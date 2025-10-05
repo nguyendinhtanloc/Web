@@ -1,80 +1,14 @@
 package murach.data;
 
 import java.io.*;
-import java.util.*;
 import murach.business.User;
 
 public class UserIO {
-    public static boolean addUser(User user, String filepath) {
-        try {
-            File file = new File(filepath);
-            PrintWriter out = new PrintWriter(new FileWriter(file, true)); // ghi trực tiếp file
+
+    public static void add(User user, String filename) throws IOException {
+        File file = new File(filename);
+        try (PrintWriter out = new PrintWriter(new FileWriter(file, true))) {
             out.println(user.getEmail() + "|" + user.getFirstName() + "|" + user.getLastName());
-            out.close();
-            return true;
-        } catch(IOException ex) {
-            ex.printStackTrace();
-            return false;
-        }
-    }
-
-    public static User getUser(String email, String filepath) {
-        try {
-            File file = new File(filepath);
-            BufferedReader in = new BufferedReader(new FileReader(file)); // đọc file thông qua bộ nhớ dệm
-
-            User user = null;
-            String line = in.readLine();
-
-            while (line != null) {
-                StringTokenizer t = new StringTokenizer(line, "|");
-
-                if (t.countTokens() < 3) {
-                    return new User("", "", "");
-                }
-
-                String token = t.nextToken();
-                if (token.equalsIgnoreCase(email)) {
-                    String firstName = t.nextToken();
-                    String lastName = t.nextToken();
-
-                    user = new User(email, firstName, lastName);
-                    break; 
-                }
-                line = in.readLine();
-            }
-
-            in.close();
-            return user;
-        } catch(IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    public static ArrayList<User> getUsers(String filepath) {
-        try {
-            ArrayList<User> users = new ArrayList<User>();
-            BufferedReader in = new BufferedReader(new FileReader(filepath));
-
-            String line = in.readLine();
-            while (line != null) {
-                StringTokenizer t = new StringTokenizer(line, "|");
-                String email = t.nextToken();
-                String firstName = t.nextToken();
-                String lastName = t.nextToken();
-
-                User user = new User(email, firstName, lastName);
-                users.add(user);
-
-                line = in.readLine();
-            }
-
-            in.close();
-            return users;
-        } catch(IOException e) {
-            e.printStackTrace();
-            return null;
         }
     }
 }

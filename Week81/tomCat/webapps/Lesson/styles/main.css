@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #eef2f7;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 30px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th, .product-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #dfe6e9;
+    text-align: left;
+    font-size: 15px;
+}
+
+.product-table th {
+    background-color: #f1f3f6;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.product-table tr:hover {
+    background-color: #f9fbfd;
+}
+
+form {
+    display: inline-block;
+}
+
+input[type="submit"], input[type="text"] {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+a {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
